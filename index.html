@@ -724,18 +724,7 @@
     // Get chat ID from bot updates
     var chatId = await getTelegramChatId();
     
-    if (!chatId) {
-      // Show instructions to user to send /start to bot first
-      document.getElementById('formSuccess').style.background = '#fff3cd';
-      document.getElementById('formSuccess').style.color = '#856404';
-      document.getElementById('formSuccess').style.borderColor = '#ffc107';
-      document.getElementById('formSuccess').innerHTML = 
-        '⚠️ To receive messages, please send <b>/start</b> to <a href="https://t.me/uztransformator_bot" target="_blank" style="color:#e07b2a">@uztransformator_bot</a> on Telegram first, then resubmit.';
-      document.getElementById('formSuccess').style.display = 'block';
-      btn.textContent = 'Send Message →';
-      btn.disabled = false;
-      return;
-    }
+   
 
     try {
       var response = await fetch('https://api.telegram.org/bot' + TG_TOKEN + '/sendMessage', {
