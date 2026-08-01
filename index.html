@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title data-i18n="meta_title">Qorasuv Elektr Sifat — Power &amp; Distribution Transformers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <a href="tel:+998996935556"><i class="fa fa-phone"></i> +998 99 693 5556</a>
+    <a href="mailto:bglazemoody@gmail.com"><i class="fa fa-envelope"></i> bglazemoody@gmail.com</a>
+  </div>
+  <div class="topbar-right">
+    <a href="https://t.me/transformatordokon" target="_blank" title="YouTube"><i class="fab fa-telegram"></i></a>
+    <a href="https://www.instagram.com/transformator_sotamiz/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <div class="lang-switch" id="langSwitch">
+      <button onclick="setLang('uz')" id="lang-uz" data-lang-btn="uz">UZ</button>
+      <button onclick="setLang('ru')" id="lang-ru" data-lang-btn="ru">RU</button>
+      <button onclick="setLang('en')" id="lang-en" data-lang-btn="en">EN</button>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">
+    <img src="images/img-png-1.png" alt="QES Logo"/>
+    <div><div class="logo-text">QORASUV</div><span class="logo-sub">Elektr Sifat</span></div>
+  </div>
+  <div class="nav-links">
+    <a onclick="showPage('home')" class="active" id="nav-home" data-i18n="nav_home">Home</a>
+    <a onclick="showPage('about')" id="nav-about" data-i18n="nav_about">About Us</a>
+    <a onclick="showPage('products')" id="nav-products" data-i18n="nav_products">Products</a>
+    <a onclick="showPage('services')" id="nav-services" data-i18n="nav_services">Services</a>
+    <a onclick="showPage('gallery')" id="nav-gallery" data-i18n="nav_gallery">Gallery</a>
+    <a onclick="showPage('export')" id="nav-export" data-i18n="nav_export">Export</a>
+  </div>
+  <button class="nav-cta" onclick="showPage('contact')" data-i18n="nav_contact">Contact Us</button>
+  <div class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('home');toggleMobile()" data-i18n="nav_home">Home</a>
+  <a onclick="showPage('about');toggleMobile()" data-i18n="nav_about">About Us</a>
+  <a onclick="showPage('products');toggleMobile()" data-i18n="nav_products">Products</a>
+  <a onclick="showPage('services');toggleMobile()" data-i18n="nav_services">Services</a>
+  <a onclick="showPage('gallery');toggleMobile()" data-i18n="nav_gallery">Gallery</a>
+  <a onclick="showPage('export');toggleMobile()" data-i18n="nav_export">Export</a>
+  <a onclick="showPage('contact');toggleMobile()" data-i18n="nav_contact">Contact Us</a>
+</div>
+</div>
+
+<!-- ══ HOME ══ -->
+<div id="page-home" class="page-section active">
+  <section class="hero">
+    <button class="hero-arrow prev" onclick="changeSlide(-1)"><i class="fa fa-chevron-left"></i></button>
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <div class="hero-content">
+          <div class="hero-small" data-i18n="hero1_small">Welcome to Qorasuv Elektr Sifat</div>
+          <h1 data-i18n-html="hero1_h1">Oil Immersed Power &amp;<br>Distribution Transformers</h1>
+          <p data-i18n="hero1_p">ISO certified manufacturer and exporter of Power &amp; Distribution Transformers up to 10MVA, 33kV class. Trusted by clients across Uzbekistan.</p>
+          <div class="hero-btns">
+            <button class="btn-orange" onclick="showPage('products')" data-i18n="hero1_btn1">Our Products</button>
+            <button class="btn-outline-white" onclick="showPage('contact')" data-i18n="hero_btn_quote">Get a Quote</button>
+          </div>
+          <div class="hero-dots">
+            <span class="on" onclick="goSlide(0)"></span>
+            <span onclick="goSlide(1)"></span>
+            <span onclick="goSlide(2)"></span>
+          </div>
+        </div>
+        <div class="hero-img-wrap"><img src="images/img-jpg-1.jpg" alt="Transformer loading"/></div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div class="hero-small" data-i18n="hero2_small">Our Production Facility</div>
+          <h1 data-i18n-html="hero2_h1">Manufactured in<br>Tashkent, Uzbekistan</h1>
+          <p data-i18n="hero2_p">Our workshop houses multiple transformer units ready for delivery. Every unit is inspected and tested before leaving our facility.</p>
+          <div class="hero-btns">
+            <button class="btn-orange" onclick="showPage('products')" data-i18n="hero2_btn1">View Products</button>
+            <button class="btn-outline-white" onclick="showPage('contact')" data-i18n="nav_contact">Contact Us</button>
+          </div>
+          <div class="hero-dots">
+            <span onclick="goSlide(0)"></span>
+            <span class="on" onclick="goSlide(1)"></span>
+            <span onclick="goSlide(2)"></span>
+          </div>
+        </div>
+        <div class="hero-img-wrap"><img src="images/img-jpg-2.jpg" alt="Transformer warehouse"/></div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-content">
+          <div class="hero-small" data-i18n="hero3_small">Ready for Export</div>
+          <h1 data-i18n-html="hero3_h1">Power Transformers<br>Built to Last</h1>
+          <p data-i18n="hero3_p">Large power transformers for industrial and utility use. Available for immediate delivery across Uzbekistan and export markets.</p>
+          <div class="hero-btns">
+            <button class="btn-orange" onclick="showPage('export')" data-i18n="hero3_btn1">Export Info</button>
+            <button class="btn-outline-white" onclick="showPage('contact')" data-i18n="hero_btn_quote">Get a Quote</button>
+          </div>
+          <div class="hero-dots">
+            <span onclick="goSlide(0)"></span>
+            <span onclick="goSlide(1)"></span>
+            <span class="on" onclick="goSlide(2)"></span>
+          </div>
+        </div>
+        <div class="hero-img-wrap"><img src="images/img-jpg-3.jpg" alt="Large power transformer"/></div>
+      </div>
+    </div>
+    <button class="hero-arrow next" onclick="changeSlide(1)"><i class="fa fa-chevron-right"></i></button>
+  </section>
+
+  <div class="about-wrap">
+    <div class="about-imgs-wrap">
+      <div class="img-grid">
+        <img class="big" src="images/img-jpg-2.jpg" alt="Transformer workshop"/>
+        <img class="sm" src="images/img-jpg-1.jpg" alt="Loading transformer"/>
+        <img class="sm" src="images/img-jpg-4.jpg" alt="Row of transformers"/>
+      </div>
+      <div class="exp-box"><div class="n">10</div><div class="t">Years<br>Of Experience</div></div>
+    </div>
+    <div class="about-text">
+      <div class="eyebrow" data-i18n="about_snip_eyebrow">About Our Company</div>
+      <h2 data-i18n="about_snip_h2">Manufacturer &amp; Exporter of Power &amp; Distribution Transformers</h2>
+      <p data-i18n="about_snip_p1">Qorasuv Elektr Sifat is a pioneering ISO 9001 certified manufacturer and exporter of Power &amp; Distribution Transformers up to 10MVA, 33kV class, and customized transformers, based in Tashkent, Uzbekistan.</p>
+      <p data-i18n="about_snip_p2">Our technical expertise and engineering precision ensure every unit meets the highest standards of performance and reliability for industrial, commercial, and utility clients.</p>
+      <a class="more" onclick="showPage('about')" data-i18n-html="about_snip_more">More About Us &rarr;</a>
+    </div>
+  </div>
+
+  <section class="products-sec">
+    <div class="sec-head">
+      <div class="ey" data-i18n="home_prod_ey">Exceptional Products and insight from the start</div>
+      <h2 data-i18n="home_prod_h2">Our Transformer Range</h2>
+    </div>
+    <div class="pgrid">
+      <div class="pcard" onclick="showPage('products')">
+        <div class="pcard-img"><img src="images/img-jpg-4.jpg" alt="Single oil transformer unit"/><div class="pcard-tag">Oil</div></div>
+        <div class="pcard-body"><h3 data-i18n="pc1_h3">Oil Immersed Power &amp; Distribution Transformers</h3><p data-i18n="pc1_p">ONAN/ONAF cooled, single/three phase, 50/60 Hz, 5 KVA to 10,000 KVA.</p><span class="lm" data-i18n-html="learn_more">Learn More &rarr;</span></div>
+      </div>
+      <div class="pcard" onclick="showPage('products')">
+        <div class="pcard-img"><img src="images/img-jpg-5.jpg" alt="QES omborida joylashgan transformatorlar qatori"/><div class="pcard-tag">Distribution</div></div>
+        <div class="pcard-body"><h3 data-i18n="pc2_h3">Distribution Transformers</h3><p data-i18n="pc2_p">Multiple units for large-scale utility and industrial distribution networks.</p><span class="lm" data-i18n-html="learn_more">Learn More &rarr;</span></div>
+      </div>
+      <div class="pcard" onclick="showPage('products')">
+        <div class="pcard-img"><img src="images/img-jpg-6.jpg" alt="Yaqindan ko'rinishdagi yog'li transformator"/><div class="pcard-tag">Power</div></div>
+        <div class="pcard-body"><h3 data-i18n="pc3_h3">Large Power Transformers</h3><p data-i18n="pc3_p">Heavy-duty units for substations and industrial power systems up to 10MVA.</p><span class="lm" data-i18n-html="learn_more">Learn More &rarr;</span></div>
+      </div>
+      <div class="pcard" onclick="showPage('products')">
+        <div class="pcard-img"><img src="images/img-jpg-7.jpg" alt="Electrical switchgear panels"/><div class="pcard-tag">Panels</div></div>
+        <div class="pcard-body"><h3 data-i18n="pc4_h3">Electrical Switchgear &amp; Panels</h3><p data-i18n="pc4_p">Complete MV/LV switchgear panels for transformer substations and distribution.</p><span class="lm" data-i18n-html="learn_more">Learn More &rarr;</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-sec">
+    <h2 data-i18n-html="cta_ready_h2">Ready to work with <em>our team?</em></h2>
+    <button class="cta-btn" onclick="showPage('contact')" data-i18n-html="cta_contact_btn">Contact With Us &rarr;</button>
+  </section>
+
+  <section class="res-sec">
+    <div class="ey" data-i18n="res_ey">Resources for our reputed clients</div>
+    <div class="rgrid">
+      <div class="rcard"><h4 data-i18n="res1_h4">Operating and Maintaining Your Transformer: A Comprehensive Manual</h4><a href="#" data-i18n-html="read_details">Read Details &rarr;</a></div>
+      <div class="rcard"><h4 data-i18n="res2_h4">Exporting Excellence: Transformers for International Markets</h4><a onclick="showPage('export')" data-i18n-html="read_details">Read Details &rarr;</a></div>
+      <div class="rcard"><h4 data-i18n="res3_h4">Latest Developments &amp; Announcements</h4><a href="https://www.instagram.com/transformator_sotamiz/" target="_blank" data-i18n-html="read_details">Read Details &rarr;</a></div>
+    </div>
+  </section>
+
+  
+
+  <section class="cta-sec" style="padding:2.8rem 40px">
+    <h2 data-i18n-html="cta_ready_h2">Ready to work with <em>our team?</em></h2>
+    <button class="cta-btn" onclick="showPage('contact')" data-i18n-html="cta_contact_btn">Contact With Us &rarr;</button>
+  </section>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<div id="page-about" class="page-section">
+  <div class="page-hero"><div class="ph-small" data-i18n="about_ph_small">Who We Are</div><h1 data-i18n="about_ph_h1">About Qorasuv Elektr Sifat</h1><p data-i18n="about_ph_p">Trusted transformer manufacturer based in Tashkent, Uzbekistan</p></div>
+  <div class="breadcrumb"><span onclick="showPage('home')" data-i18n="nav_home">Home</span> / <span data-i18n="nav_about">About Us</span></div>
+  <div class="about-page-wrap">
+    <div class="about-page-grid">
+      <img src="images/img-jpg-2.jpg" alt="Our workshop"/>
+      <div>
+        <h2 data-i18n="about_snip_h2">Manufacturer &amp; Exporter of Power &amp; Distribution Transformers</h2>
+        <p data-i18n="about_p1">Qorasuv Elektr Sifat (QES) is a pioneering ISO 9001 certified manufacturer and exporter of Power &amp; Distribution Transformers up to 10MVA, 33kV class, and customized transformers, based in Tashkent, Uzbekistan.</p>
+        <p data-i18n="about_p2">Founded by experienced engineers and technocrats, QES has established itself as a trusted name delivering reliable, high-efficiency transformer solutions for industrial, commercial, and utility clients across Uzbekistan and international markets.</p>
+        <p data-i18n="about_p3">Our state-of-the-art manufacturing facility is equipped with the latest machinery and testing equipment to ensure every transformer leaving our factory meets the highest quality standards.</p>
+      </div>
+    </div>
+    <div class="sec-head" style="text-align:left;margin-bottom:1.5rem"><div class="ey" data-i18n="values_ey">What drives us</div><h2 style="font-size:24px" data-i18n="values_h2">Our Core Values</h2></div>
+    <div class="values-grid">
+      <div class="val-card"><i class="fa fa-medal"></i><h4 data-i18n="val1_h4">Quality First</h4><p data-i18n="val1_p">Every transformer is built to ISO 9001 standards with rigorous testing at each stage of production.</p></div>
+      <div class="val-card"><i class="fa fa-handshake"></i><h4 data-i18n="val2_h4">Customer Focus</h4><p data-i18n="val2_p">We work closely with each client to understand their specific needs and deliver tailored solutions.</p></div>
+      <div class="val-card"><i class="fa fa-leaf"></i><h4 data-i18n="val3_h4">Sustainability</h4><p data-i18n="val3_p">Our energy-efficient designs reduce power losses and support a greener industrial future.</p></div>
+      <div class="val-card"><i class="fa fa-cogs"></i><h4 data-i18n="val4_h4">Innovation</h4><p data-i18n="val4_p">Continuous R&amp;D ensures our products incorporate the latest advancements in transformer technology.</p></div>
+      <div class="val-card"><i class="fa fa-globe"></i><h4 data-i18n="val5_h4">Global Reach</h4><p data-i18n="val5_p">Exporting to multiple countries with full compliance to international standards and certifications.</p></div>
+      <div class="val-card"><i class="fa fa-shield-alt"></i><h4 data-i18n="val6_h4">Reliability</h4><p data-i18n="val6_p">Our transformers are engineered for long service life and minimal maintenance requirements.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PRODUCTS ══ -->
+<div id="page-products" class="page-section">
+  <div class="page-hero"><div class="ph-small" data-i18n="prod_ph_small">What We Make</div><h1 data-i18n="prod_ph_h1">Our Transformer Products</h1><p data-i18n="prod_ph_p">High-quality power transformers for every industrial application</p></div>
+  <div class="breadcrumb"><span onclick="showPage('home')" data-i18n="nav_home">Home</span> / <span data-i18n="nav_products">Products</span></div>
+  <div class="products-page-wrap">
+    <div class="prod-page-grid">
+      <div class="prod-page-card">
+        <div class="prod-page-img"><img src="images/img-jpg-4.jpg" alt="Single transformer unit"/></div>
+        <div class="prod-page-body"><span class="ptag" data-i18n="tag_oil">Oil</span><h3 data-i18n="pp1_h3">Oil Immersed Power &amp; Distribution Transformers</h3><p data-i18n="pp1_p">ONAN/ONAF/OFWF cooled, single/three phase, 50/60 Hz Aluminium/Copper wound, continuous duty transformers for industrial and utility use.</p><div class="prod-specs"><strong data-i18n="spec_capacity">Capacity:</strong> <span data-i18n="pp1_spec1">5 KVA to 10,000 KVA</span><br><strong data-i18n="spec_voltage">Voltage Class:</strong> <span data-i18n="pp1_spec2">Up to 33 kV</span><br><strong data-i18n="spec_cooling">Cooling:</strong> ONAN / ONAF / OFWF<br><strong data-i18n="spec_standard">Standard:</strong> IEC / GOST</div></div>
+      </div>
+      <div class="prod-page-card">
+        <div class="prod-page-img"><img src="images/img-jpg-8.jpg" alt="Row of distribution transformers"/></div>
+        <div class="prod-page-body"><span class="ptag" data-i18n="tag_distribution">Distribution</span><h3 data-i18n="pp2_h3">Distribution Transformers</h3><p data-i18n="pp2_p">Multiple-unit production runs for utility companies and large industrial clients. Ready for immediate delivery across Uzbekistan and export markets.</p><div class="prod-specs"><strong data-i18n="spec_capacity">Capacity:</strong> <span data-i18n="pp2_spec1">25 KVA to 2,500 KVA</span><br><strong data-i18n="spec_phase">Phase:</strong> <span data-i18n="pp2_spec2">Single / Three Phase</span><br><strong data-i18n="spec_freq">Frequency:</strong> 50 / 60 Hz<br><strong data-i18n="spec_application">Application:</strong> <span data-i18n="pp2_spec4">Utility / Industrial</span></div></div>
+      </div>
+      <div class="prod-page-card">
+        <div class="prod-page-img"><img src="images/img-jpg-9.jpg" alt="Large power transformer outdoor"/></div>
+        <div class="prod-page-body"><span class="ptag" data-i18n="tag_power">Power</span><h3 data-i18n="pp3_h3">Large Power Transformers</h3><p data-i18n="pp3_p">Heavy-duty transformers for substations, mining operations, and large industrial power systems. Crane-assisted installation supported.</p><div class="prod-specs"><strong data-i18n="spec_capacity">Capacity:</strong> <span data-i18n="pp3_spec1">1 MVA to 10 MVA</span><br><strong data-i18n="spec_voltage">Voltage Class:</strong> <span data-i18n="pp3_spec2">Up to 35 kV</span><br><strong data-i18n="spec_cooling">Cooling:</strong> ONAN / OFWF<br><strong data-i18n="spec_design">Design:</strong> <span data-i18n="pp3_spec4">Custom per project</span></div></div>
+      </div>
+      <div class="prod-page-card">
+        <div class="prod-page-img"><img src="images/img-jpg-7.jpg" alt="Electrical switchgear panels"/></div>
+        <div class="prod-page-body"><span class="ptag" data-i18n="tag_panels">Panels</span><h3 data-i18n="pp4_h3">Electrical Switchgear &amp; Panels</h3><p data-i18n="pp4_p">Complete MV/LV switchgear panels, distribution boards, and control panels for transformer substations and industrial distribution systems.</p><div class="prod-specs"><strong data-i18n="spec_types">Types:</strong> <span data-i18n="pp4_spec1">MV / LV Switchgear</span><br><strong data-i18n="spec_voltage">Voltage:</strong> <span data-i18n="pp3_spec2b">Up to 35 kV</span><br><strong data-i18n="spec_enclosure">Enclosure:</strong> <span data-i18n="pp4_spec3">IP54 / Custom</span><br><strong data-i18n="spec_standard">Standard:</strong> IEC 62271</div></div>
+      </div>
+    </div>
+    <div class="cta-sec" style="margin-top:3rem;border-radius:8px"><h2 data-i18n-html="cta_custom_h2">Need a <em>custom transformer?</em></h2><button class="cta-btn" onclick="showPage('contact')" data-i18n-html="cta_request_quote">Request a Quote &rarr;</button></div>
+  </div>
+</div>
+
+<!-- ══ SERVICES ══ -->
+<div id="page-services" class="page-section">
+  <div class="page-hero"><div class="ph-small" data-i18n="srv_ph_small">What We Offer</div><h1 data-i18n="srv_ph_h1">Our Services</h1><p data-i18n="srv_ph_p">End-to-end transformer services from manufacturing to maintenance</p></div>
+  <div class="breadcrumb"><span onclick="showPage('home')" data-i18n="nav_home">Home</span> / <span data-i18n="nav_services">Services</span></div>
+  <div class="services-wrap">
+    <div class="sec-head"><div class="ey" data-i18n="srv_ey">Full lifecycle support</div><h2 data-i18n="srv_h2">How We Support Your Operations</h2></div>
+    <div class="services-grid">
+      <div class="srv-card"><div class="srv-icon"><i class="fa fa-industry"></i></div><h3 data-i18n="srv1_h3">Manufacturing</h3><p data-i18n="srv1_p">State-of-the-art in-house manufacturing of power and distribution transformers to exact customer specifications.</p></div>
+      <div class="srv-card"><div class="srv-icon"><i class="fa fa-tools"></i></div><h3 data-i18n="srv2_h3">Installation &amp; Commissioning</h3><p data-i18n="srv2_p">On-site installation, commissioning, and startup testing by our qualified field engineering team.</p></div>
+      <div class="srv-card"><div class="srv-icon"><i class="fa fa-wrench"></i></div><h3 data-i18n="srv3_h3">Repair &amp; Rewinding</h3><p data-i18n="srv3_p">Complete transformer repair, rewinding, and refurbishment services to extend the life of your existing units.</p></div>
+      <div class="srv-card"><div class="srv-icon"><i class="fa fa-flask"></i></div><h3 data-i18n="srv4_h3">Testing &amp; Diagnostics</h3><p data-i18n="srv4_p">Comprehensive routine and type tests including oil BDV, winding resistance, turns ratio, and load/no-load loss tests.</p></div>
+      <div class="srv-card"><div class="srv-icon"><i class="fa fa-clipboard-check"></i></div><h3 data-i18n="srv5_h3">Annual Maintenance</h3><p data-i18n="srv5_p">Scheduled preventive maintenance programs to ensure maximum uptime and reliability of your transformer fleet.</p></div>
+      <div class="srv-card"><div class="srv-icon"><i class="fa fa-headset"></i></div><h3 data-i18n="srv6_h3">Technical Consultancy</h3><p data-i18n="srv6_p">Expert guidance on transformer selection, system design, energy efficiency optimization, and regulatory compliance.</p></div>
+    </div>
+    <div style="margin-top:3rem"><div class="cta-sec" style="border-radius:8px"><h2 data-i18n-html="cta_service_h2">Need a <em>service quote?</em></h2><button class="cta-btn" onclick="showPage('contact')" data-i18n-html="cta_contact_team_btn">Contact Our Team &rarr;</button></div></div>
+  </div>
+</div>
+
+<!-- ══ GALLERY ══ -->
+<div id="page-gallery" class="page-section">
+  <div class="page-hero"><div class="ph-small" data-i18n="gal_ph_small">Our Work</div><h1 data-i18n="gal_ph_h1">Photo Gallery</h1><p data-i18n="gal_ph_p">Real photos from our facility and completed projects</p></div>
+  <div class="breadcrumb"><span onclick="showPage('home')" data-i18n="nav_home">Home</span> / <span data-i18n="nav_gallery">Gallery</span></div>
+  <div class="gallery-wrap">
+    <div class="gallery-filter">
+      <button class="flt-btn active" onclick="filterGallery('all',this)" data-i18n="flt_all">All</button>
+      <button class="flt-btn" onclick="filterGallery('workshop',this)" data-i18n="flt_workshop">Workshop</button>
+      <button class="flt-btn" onclick="filterGallery('products',this)" data-i18n="nav_products">Products</button>
+      <button class="flt-btn" onclick="filterGallery('outdoor',this)" data-i18n="flt_outdoor">Outdoor</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gal-item" data-cat="workshop" onclick="openLightbox(this)"><img src="images/img-jpg-1.jpg" alt="Loading transformer"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gal-item" data-cat="workshop" onclick="openLightbox(this)"><img src="images/img-jpg-2.jpg" alt="Transformer warehouse"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gal-item" data-cat="outdoor" onclick="openLightbox(this)"><img src="images/img-jpg-9.jpg" alt="Large outdoor transformer"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gal-item" data-cat="outdoor" onclick="openLightbox(this)"><img src="images/img-jpg-3.jpg" alt="Transformer yard"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gal-item" data-cat="products" onclick="openLightbox(this)"><img src="images/img-jpg-8.jpg" alt="Row of transformers"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gal-item" data-cat="products" onclick="openLightbox(this)"><img src="images/img-jpg-4.jpg" alt="Single transformer unit"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gal-item" data-cat="products" onclick="openLightbox(this)"><img src="images/img-jpg-7.jpg" alt="Electrical panels"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+      <div class="gal-item" data-cat="outdoor" onclick="openLightbox(this)"><img src="images/img-jpg-10.jpg" alt="Transformer yard"/><div class="gal-overlay"><i class="fa fa-expand"></i></div></div>
+    </div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightboxImg" src="" alt="Gallery image"/>
+</div>
+
+<!-- ══ EXPORT ══ -->
+<div id="page-export" class="page-section">
+  <div class="page-hero"><div class="ph-small" data-i18n="exp_ph_small">Global Reach</div><h1 data-i18n="nav_export">Export</h1><p data-i18n="exp_ph_p">Delivering quality transformers to international markets</p></div>
+  <div class="breadcrumb"><span onclick="showPage('home')" data-i18n="nav_home">Home</span> / <span data-i18n="nav_export">Export</span></div>
+  <div class="export-wrap">
+    <div class="export-intro">
+      <img src="images/img-jpg-3.jpg" alt="Transformers ready for export"/>
+      <div>
+        <h2 data-i18n="res2_h4">Exporting Excellence: Transformers for International Markets</h2>
+        <p data-i18n="exp_p1">Qorasuv Elektr Sifat exports Power &amp; Distribution Transformers to clients across Central Asia, the Middle East, and beyond. Our transformers comply with international standards including IEC, GOST, and BS.</p>
+        <p data-i18n="exp_p2">We have a dedicated export team to handle all documentation, packaging, and logistics to ensure safe and timely delivery anywhere in the world.</p>
+        <p data-i18n="exp_p3">All export units undergo additional pre-shipment testing and inspection as per customer and country-specific requirements.</p>
+        <button class="btn-orange" style="margin-top:1rem" onclick="showPage('contact')" data-i18n="exp_req_btn">Request Export Quote</button>
+      </div>
+    </div>
+    <div class="sec-head"><div class="ey" data-i18n="exp_ey">Where we deliver</div><h2 data-i18n="exp_countries_h2">Countries We Export To</h2></div>
+    <div class="countries-grid">
+      <div class="country-card"><div class="flag">🇺🇿</div><p data-i18n="country_uz">Uzbekistan</p></div>
+      <div class="country-card"><div class="flag">🇰🇿</div><p data-i18n="country_kz">Kazakhstan</p></div>
+      <div class="country-card"><div class="flag">🇰🇬</div><p data-i18n="country_kg">Kyrgyzstan</p></div>
+      <div class="country-card"><div class="flag">🇹🇯</div><p data-i18n="country_tj">Tajikistan</p></div>
+      <div class="country-card"><div class="flag">🇹🇲</div><p data-i18n="country_tm">Turkmenistan</p></div>
+      <div class="country-card"><div class="flag">🇦🇿</div><p data-i18n="country_az">Azerbaijan</p></div>
+      <div class="country-card"><div class="flag">🇦🇫</div><p data-i18n="country_af">Afghanistan</p></div>
+      <div class="country-card"><div class="flag">🌍</div><p data-i18n="country_other">Other Countries</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT ══ -->
+<div id="page-contact" class="page-section">
+  <div class="page-hero"><div class="ph-small" data-i18n="contact_ph_small">Get In Touch</div><h1 data-i18n="nav_contact">Contact Us</h1><p data-i18n="contact_ph_p">We're ready to help you find the right transformer solution</p></div>
+  <div class="breadcrumb"><span onclick="showPage('home')" data-i18n="nav_home">Home</span> / <span data-i18n="nav_contact">Contact Us</span></div>
+  <div class="contact-wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2 data-i18n="contact_ph_small">Get In Touch</h2>
+        <p data-i18n="contact_intro_p">Our engineers are ready to help you find the right transformer for your project.</p>
+        <div class="cinfo-item"><div class="cicon"><i class="fa fa-map-marker-alt"></i></div><div><h4 data-i18n="cinfo_addr_h4">Our Address</h4><p data-i18n="cinfo_addr_p">Tashkent, Uzbekistan</p></div></div>
+        <div class="cinfo-item"><div class="cicon"><i class="fa fa-phone"></i></div><div><h4 data-i18n="cinfo_phone_h4">Phone Number</h4><p><a href="tel:+998996935556" style="color:#e07b2a">+998 99 693 5556</a></p></div></div>
+        <div class="cinfo-item"><div class="cicon"><i class="fa fa-envelope"></i></div><div><h4 data-i18n="cinfo_email_h4">Email Address</h4><p><a href="mailto:bglazemoody@gmail.com" style="color:#e07b2a">bglazemoody@gmail.com</a></p></div></div>
+        <div class="cinfo-item"><div class="cicon"><i class="fa fa-clock"></i></div><div><h4 data-i18n="cinfo_hours_h4">Working Hours</h4><p data-i18n="cinfo_hours_p">Monday – Saturday: 9:00 AM – 6:00 PM</p></div></div>
+        <div class="map-box"><iframe src="https://www.google.com/maps?q=Qorasuv+Elektr+Sifat,41.075533,69.2301163&z=16&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      </div>
+      <div class="contact-form-wrap">
+        <h3 data-i18n="form_title">Send Us a Message</h3>
+        <form onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="form_name_label">Your Name *</label><input type="text" placeholder="Full name" data-i18n-placeholder="form_name_ph" required/></div>
+            <div class="form-group"><label data-i18n="form_company_label">Company</label><input type="text" placeholder="Company name" data-i18n-placeholder="form_company_ph"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label data-i18n="form_email_label">Email *</label><input type="email" placeholder="your@email.com" required/></div>
+            <div class="form-group"><label data-i18n="form_phone_label">Phone</label><input type="tel" placeholder="Phone number" data-i18n-placeholder="form_phone_ph"/></div>
+          </div>
+          <div class="form-group"><label data-i18n="form_product_label">Product Interest</label>
+            <select><option value="" data-i18n="form_select_default">Select product type</option><option data-i18n="opt_oil">Oil Immersed Transformer</option><option data-i18n="opt_dist">Distribution Transformer</option><option data-i18n="opt_power">Large Power Transformer</option><option data-i18n="opt_panels">Switchgear &amp; Panels</option><option data-i18n="opt_other">Other / Not Sure</option></select>
+          </div>
+          <div class="form-group"><label data-i18n="form_message_label">Message *</label><textarea placeholder="Tell us about your project, required capacity, voltage class, etc." data-i18n-placeholder="form_message_ph" required></textarea></div>
+          <button type="submit" class="form-submit" data-i18n-html="form_submit_btn">Send Message &rarr;</button>
+          <div class="form-success" id="formSuccess"><i class="fa fa-check-circle"></i> <span data-i18n="form_success_msg">Thank you! Your message has been sent. We will contact you shortly.</span></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="fbrand-logo" onclick="showPage('home')">
+        <img src="images/img-png-1.png" alt="QES Logo"/>
+        <div><div class="ft">QORASUV <span>ELEKTR</span></div><span class="fs">Sifat — Tashkent</span></div>
+      </div>
+      <p data-i18n="footer_brand_p">Leading manufacturer of Power and Distribution Transformers serving Uzbekistan and international markets with quality, reliability and technical excellence.</p>
+      <div class="fsocial">
+        <a href="https://t.me/transformatordokon" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.instagram.com/transformator_sotamiz/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="fcol"><h5 data-i18n="footer_links_h5">Useful Links</h5><ul>
+      <li><a onclick="showPage('home')" data-i18n="nav_home">Home</a></li>
+      <li><a onclick="showPage('about')" data-i18n="nav_about">About Us</a></li>
+      <li><a onclick="showPage('gallery')" data-i18n="footer_gallery_link">Our Gallery</a></li>
+      <li><a onclick="showPage('contact')" data-i18n="nav_contact">Contact Us</a></li>
+    </ul></div>
+    <div class="fcol"><h5 data-i18n="footer_products_h5">Our Products</h5><ul>
+      <li><a onclick="showPage('products')" data-i18n="footer_p1">Oil Transformers</a></li>
+      <li><a onclick="showPage('products')" data-i18n="pc2_h3">Distribution Transformers</a></li>
+      <li><a onclick="showPage('products')" data-i18n="footer_p3">Power Transformers</a></li>
+      <li><a onclick="showPage('products')" data-i18n="pc4_h3">Switchgear &amp; Panels</a></li>
+    </ul></div>
+    <div class="fcol"><h5 data-i18n="footer_quickinfo_h5">Quick Info</h5><div class="finfo">
+      <div><i class="fa fa-map-marker-alt"></i><span data-i18n="cinfo_addr_p">Tashkent, Uzbekistan</span></div>
+      <div><i class="fa fa-phone"></i><span>+998 99 693 5556</span></div>
+      <div><i class="fa fa-envelope"></i><span>bglazemoody@gmail.com</span></div>
+      <div><i class="fa fa-clock"></i><span data-i18n="footer_hours">Mon–Sat: 9:00 AM – 6:00 PM</span></div>
+    </div></div>
+  </div>
+  <div class="fbot"><span data-i18n-html="footer_copyright">© 2026 Qorasuv Elektr Sifat. All Rights Reserved.</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
